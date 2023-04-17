@@ -55,6 +55,31 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/]
+    transpile: [/^element-ui/],
+    postcss: {
+      // 添加插件名称作为键，参数作为值
+      plugins: {
+        'postcss-px-to-viewport': {
+          unitToConvert: 'px',
+          viewportWidth: 750,
+          unitPrecision: 5,
+          propList: ['*'],
+          viewportUnit: 'vw',
+          fontViewportUnit: 'vw',
+          selectorBlackList: [],
+          minPixelValue: 1,
+          mediaQuery: false,
+          replace: true,
+          exclude: [],
+          landscape: false,
+          landscapeUnit: 'vw',
+          landscapeWidth: 1136
+        }
+      },
+      preset: {
+        // 更改postcss-preset-env 设置
+        autoprefixer: {}
+      }
+    }
   }
 }
