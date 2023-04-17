@@ -35,6 +35,7 @@ p {
 
 p span {
   animation: flicker 3s linear infinite;
+  padding: 0 10px;
 }
 
 p #a {
