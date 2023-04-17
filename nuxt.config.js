@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'learn-nuxt',
+    title: '欢乐的小盖盖',
     htmlAttrs: {
       lang: 'en'
     },
